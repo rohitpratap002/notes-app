@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/36080db35e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <button id="addbtn">+</button>
+    <div id="fullContainer"></div>
+    <div id="main" class="main Mainpage">
+        <div id="create-note" class="main-center">
+            <img src="img/web.png">
+            <div class="centered">Tap to Create new Note</div>
+        </div>
+        <!-- <div class="note" id="noteNumber1">
+            <div class="tool">
+                <i class="fa-solid fa-download"></i>
+                <i class="fa-sharp fa-solid fa-trash"></i>
+            </div>
+            <div class="note-body"></div>
+        </div> -->
+    </div>
+    <div id="editor">
+        <div class="note open-note">
+            <div class="tool open-tool">
+                <div class="title">
+                    <input type="text" name="NoteTitle" placeholder="Enter Title" id="noteTitle">
+                </div>
+                <div>
+                    <button id="saveButton"> Save</button>
+                </div>
+            </div>
+            <textarea id="textarea" placeholder="Enter Your Note Here"></textarea>
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

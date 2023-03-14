@@ -1,0 +1,152 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 30px;
+}
+/* * img{
+    height: 100%;
+    width:50%;
+} */
+#main,#editor{
+    height:100%;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main .main-center{
+    display: none;
+}
+.Mainpage .main-center{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px dashed #8107d8;
+    padding: 3rem;
+    border-radius: 10px;
+    gap: .7rem;
+    cursor: pointer;
+    opacity: .4;
+}
+.Mainpage .main-center img{
+    aspect-ratio: 1;
+    height:150px;
+    filter: invert(24%) sepia(69%) saturate(5425%) hue-rotate(269deg) brightness(78%) contrast(127%);
+}
+.centered {
+    color: #8107d8;
+    font-size: 1.6rem;
+    text-align: center;
+}
+#addbtn{
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+    background-color: #8107d8;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s all ease;
+}
+#addbtn:hover{
+    background: #af5ce9;
+}
+.note{
+    height: 400px;
+    width: 480px;
+    background-color:transparent;
+    margin: 15px;
+    margin-top: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 8px 8px 10px #cacaca,inset -8px -8px 18px #e2e2e2,inset 8px 8px 18px #fff;   
+}
+
+.tool{
+    width: 100%;
+    height: 45px;
+    padding:0 15px;
+    background-color: #801dc6;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: inset 3px 3px 6px #c489ee;
+
+}
+.tool i{
+    padding:5px;
+    cursor: pointer;
+}
+.note .note-body{
+    height: 100%;
+    width: 100%;
+    border: none;
+    resize: none;
+    padding:10px;
+    font-size:25px;
+    background: transparent;
+}
+.note textarea:focus{
+    border: 0;
+    outline:0;
+}
+#editor{
+    display: flex;
+    justify-content: center;
+}
+.open-note{
+   height: 80vh; 
+   width: 95%;
+}
+.open-note .tool{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#noteTitle{
+    border: none;
+    height: 45px;
+    width: 70vw;
+    color: white;
+    background: transparent;
+    outline: none;
+    font-size: 23px;
+}
+#noteTitle::placeholder{
+    color: rgb(203, 203, 203);
+}
+.open-note textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    padding:10px;
+    font-size:25px;
+    background: transparent;
+}
+#saveButton{
+    padding: 5px 5px;
+    color: purple;
+    font-size: 20px;
+    background: #fff;
+    border: none;
+    border-radius: 3px;
+}
